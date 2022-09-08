@@ -1,0 +1,51 @@
+//clase libro
+public class libro{
+    //Atributos
+    private string titulo, autor;
+    private int ISBN, npage;
+    //consulta un titulo
+    public string gettitulo(){
+        //devuelve un valor cuando se usa
+        return(this.titulo);
+    }
+    //configura el titulo
+    public void settitulo(string title){
+        //muestra en pantalla titulo
+        this.titulo=title;
+    }
+    /*metodos
+
+    consulta un  autor
+      */  
+       public string getautor(){
+        //devuelve un valor cuando se usa
+        return(this.autor);
+     }
+     //configura un autor
+    public void setautor(string autor){
+     //muestra en pantalla el autor
+        this.autor=autor;
+    }
+    // consulta ISBN
+    public int getISBN(){
+        //devuelve un valor cuando se usa
+        return this.ISBN;
+    }
+    //configura ISBN
+    public void setISBN(int ncode){
+        //muestra en pantalla ISBN=ncode
+        this.ISBN=ncode;
+    }
+    //consulta page
+    public int getpage(){
+        //devuelve un valor cuando se usa
+      return this.npage;
+    }
+    //configura un setnpage
+    public void setnpages(int npagi){
+        //muestra en pantalla npage=npagi
+        this.npage=npagi;
+    }
+    public void tostring(){ Console.WriteLine("El libro "+this.titulo+" con ISBN "+this.ISBN+" creado por el autor "+this.autor+" tiene "+this.npage+" paginas.");
+    }
+}
